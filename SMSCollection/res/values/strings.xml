@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SMS Collection</string>
+    <string name="app_description">Submit SMS to Gmail over the internet.</string>
+    <string name="app_version">1.0.4</string>
+    
+	<string name="ui_sync_button_label_idle">Submit now</string>
+	<string name="ui_sync_button_label_done">Submit again</string>
+	<string name="ui_sync_button_label_error">Retry submission</string>
+	<string name="ui_sync_button_label_syncing">Stop submission</string>
+	<string name="ui_sync_button_label_canceling">Stopping\u2026</string>
+	
+	<string name="status_idle">Idle</string>
+		<string name="status_idle_details">Last submission:<xliff:g id="last_backup_date">%1$s</xliff:g></string>
+		<string name="status_idle_details_never">Never</string>
+	<string name="status_sync">Submitting</string>
+		<string name="status_sync_details">Submitted <xliff:g id="backed_up_items">%1$d</xliff:g>/<xliff:g id="total_items">%2$d</xliff:g> items\u2026</string>
+	<string name="status_login">Submitting</string>
+		<string name="status_login_details">Logging in\u2026</string>
+	<string name="status_done">Done</string>
+		<string name="status_done_details_max_per_sync">Maximum of %1$d items per submission reached. Restart submission to continue.</string>
+		<string name="status_done_details_noitems">There were no items to submit.</string>
+		<plurals name="status_done_details">
+	        <item quantity="one">Successfully submitted <xliff:g id="total_items">%1$d</xliff:g> item.\nNow go to the draft-folder of your Gmail account!</item>
+	        <item quantity="other">Successfully submitted <xliff:g id="total_items">%1$d</xliff:g> items.\nNow go to the draft-folder of your Gmail account!</item>
+	    </plurals>
+	<string name="status_unknown_error">Error</string>
+		<string name="status_unknown_error_details">Error during submission:\n<xliff:g id="error_description">%1$s</xliff:g></string>
+	<string name="status_auth_failure">Login error</string>
+		<string name="status_auth_failure_details">Please make sure you enabled IMAP in your Gmail account settings and check your username and password.</string>
+		
+		<string name="status_network_error">Network Error</string>
+	<string name="status_network_error_details">Unable to connect to the Internet, please check the network. </string>
+	
+	<string name="status_lang_error">Gmail Error</string>
+	<string name="status_lang_error_details">Please change the language of your Gmail to English, then submit again. </string>
+	
+	
+	
+	<string name="status_calc">Submitting</string>
+		<string name="status_calc_details">Calculating\u2026</string>
+	<string name="status_canceled">Canceled</string>
+		<string name="status_canceled_details">%1$d/%2$d items successfully submitted.</string>
+	
+	<string name="ui_status_label">SMS Collection</string>
+	<string name="ui_settings_label">Settings</string>
+	<string name="ui_settings_advanced_label">Advanced settings</string>
+	<string name="ui_settings_advanced_desc">Set advanced preferences.</string>
+	<string name="ui_settings_advanced_cat_label">SMS Collection<small>\u00bb Advanced settings</small></string>
+	
+	<string name="ui_login_label">Username</string>
+	<string name="ui_login_desc">Your Gmail full e-mail address.</string>
+	<string name="ui_login_dialog_msg">WARNING: Changing the username will reset all your submission information and your password.</string>
+	
+	<string name="ui_password_label">Password</string>
+	<string name="ui_password_desc">Your Gmail account password.</string>
+	<string name="ui_password_dialog_msg">The password is stored on this device and is only used to login at Gmail.</string>	
+		
+	<string name="ui_imap_folder_label">Gmail label</string>
+	<string name="ui_imap_folder_desc">The frequency of auto submission.</string>
+	<string name="ui_imap_folder_label_dialog_msg">Sumitted SMS messages will be tagged with this label in Gmail.</string>
+	
+	<string name="donation_address">emotionmobilesensing@gmail.com</string>
+	
+	<string name="ui_max_items_per_sync_label">Items per submission</string>
+	<string name="ui_max_items_per_sync_desc">Maximum number of items per submission.</string>
+	
+	<string name="ui_mark_as_read_label">Mark as read</string>
+	<string name="ui_mark_as_read_desc">Whether to mark messages in Gmail as read or not.</string>
+	<string name="ui_enable_auto_sync_label">Auto submit</string>
+	<string name="ui_enable_auto_sync_desc">Whether to automatically submit new sent SMS or not.</string>
+	
+	<string name="ui_dialog_missing_credentials_title">Login information</string>
+	<string name="ui_dialog_missing_credentials_msg">You need to set the login information before submission.</string>
+	<string name="ui_dialog_sync_data_reset_title">Submission data reset</string>
+	<string name="ui_dialog_sync_data_reset_msg">Submission data has been reset. Please set your password and perform a manual submit. You will be able to decide whether to submit or skip messages stored on this device.</string>
+	<string name="ui_dialog_invalid_imap_folder_title">Invalid label name</string>
+	<string name="ui_dialog_invalid_imap_folder_msg">The label name may only contain unaccented letters (A-Z, a-z).</string>
+	
+	<string name="ui_dialog_first_sync_title">First submission</string>
+	<string name="ui_dialog_first_sync_msg">Submit or skip all messages currently stored on this device?\n\nNote: If you choose to submit, all messages will submit in one batch. \nIf you choose to skip, all messages currently stored on your device are simply marked as submitted and can not be submitted again.</string>
+	
+	<string name="ui_dialog_need_first_manual_sync_title">First submission</string>
+	<string name="ui_dialog_need_first_manual_sync_msg">The first submission needs to be initiated manually. Would you like to perform a submission now?</string>
+
+	<string name="ui_ok">OK</string>
+	<!-- string name="ui_yes">Yes</string -->
+	<!-- string name="ui_no">No</string -->
+	
+	<string name="ui_sync">Submit</string>
+	<string name="ui_skip">Skip</string>
+	
+	<string name="err_could_not_create_folder">Could not create label.</string>
+	<string name="err_first_sync_needs_skip_flag">Internal error: First submission without indication whether to skip messages or not.</string>
+	<string name="err_sync_requires_login_info">Cannot submit without login information.</string>
+	<string name="err_communication_error">General communication error.</string>
+	
+	<string name="menu_info">About</string>
+	<string name="menu_share">Share</string>
+	<string name="menu_market">Update</string>
+	
+	<string name="about_email_button">Email author</string>
+	<string name="about_email_subject">%1$s %2$s</string>
+	<string name="about_email_content">Hi Eric Schles,\n</string>
+	<string name="about_email_uri">mailto:emotionmobilesensing@gmail.com</string>
+	
+		<string name="ui_close">OK</string>
+	
+	
+	<string name="share_subject">SMS Collection for Android</string>
+	<string name="share_body">You can now submit all SMS messages on your Android device to Gmail!\nCheck out the SMS Collection application by clicking the following link on your device:\n%1$s\nor visit:\n%2$s</string>
+	
+
+	<string name="ui_frequency_auto_submit_label">Frequency of auto submission </string>
+	<string name="ui_frequency_auto_submit_desc">The frequency of auto submission.</string>
+
+
+	<string name="ui_dialog_invalid_username_title">Invalid Gmail Address</string>
+	<string name="ui_dialog_invalid_username_msg">The full Gmail address should end with @gmail.com</string>
+	
+
+<!-- donation -->
+		<string name="donation_body">Dear %1$s:\n\nThank you for participating in our project!\n\nWe would like to collect the %2$d messages below for research.To do so, we need you to send out this draft email to us so that we can collect the messages for the public corpus.\n\nWe realize that SMS often contain sensitive data. As such, to protect your privacy, we’ve tried to anonymize any sensitive data in your SMSes, such as telephone numbers, email addresses and other potentially sensitive information. This anonymization process was done on your android device so that your personal SMSes have not yet been sent to our server. Despite this process, you may want to review the messages below to delete any SMSes that you would not like to provide to us for our public research corpus. If you would like to remove any such messages, please simply delete the text of each corresponding message between the two separator lines (----------) in this email (please do leave the line with the SMS metadata if you don’t mind).Once you are satisfied with your submission, please send out this email.\n\nThe unique code to identify your submission is:%3$s , which will be used to correctly correlate your task and your email thus credit you for your work.\n\nAgain, your %2$d messages have not yet been collected.  We need you to send this email out to us both to collect the messages as well as to act as consent to collect these for linguistic research.\n\nIf you want to know more about our project, please refer to our project home page: http://wing.comp.nus.edu.sg:8080/SMSCorpus\n\nThank you very much!\n\nTao Chen and A/P Min-Yen Kan\n
+Web IR / NLP Group (@ National University of Singapore)\n\n%2$d messages follow:\n%4$s\n
+</string>
+				
+				
+<string name="_12h">12 hours</string>
+<string name="_24h">24 hours</string>
+<string name="_48h">48 hours</string>
+<string name="unlimited">Unlimited</string>
+
+<string name="url_info_link">http://wing.comp.nus.edu.sg:8080/SMSCorpus/appUserGuide.jsp</string>
+
+<string name="imap_folder_donate">[Gmail]/Drafts</string>
+
+</resources>

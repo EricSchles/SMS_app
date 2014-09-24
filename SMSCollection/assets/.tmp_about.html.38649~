@@ -1,0 +1,25 @@
+<h2 style="margin-bottom: -14px">Android SMS Submission App for AMT User</h2>
+<p><small>
+Version: 1.0.1<br/>
+Author: Tao Chen </small></p>
+<p>Automatically upload your sent SMS messages to Gmail as a draft email. Then you need to send the email to us so that we can collect your messages.
+Our project aims to collect SMS messages and build a public corpus for research. Our App is a modified version of an open-source App SMS Backup.
+
+<h3>Information</h3>
+<p>Please visit the <a href="%3$s">User Guide</a> for more information.
+
+<h3>License</h3>
+<p>This application is released under the terms of the
+ <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a>.
+ <ul>
+ 	<li><a href="http://android-sms.googlecode.com/svn-history/r39/trunk/android-client/NOTICE">NOTICE</a></li>
+ 	<li><a href="http://android-sms.googlecode.com/svn-history/r39/trunk/android-client/COPYING">COPYING</a></li>
+ </ul>
+</p>
+
+<h3>Thanks</h3>
+<p>Many thanks to:
+<ul>
+	<li>Author of SMS Backup: <a href="http://code.google.com/p/android-sms/">Chstuder</a></li>
+	<li>Google for the <a href="http://android.com/">Android platform</a>.</li>
+</p>

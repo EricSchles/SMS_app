@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SMS Collection</string>
+    <string name="app_description">連接網際網路後，通過Gmail來提交短信.</string>
+    <string name="app_version">1.0.4</string>
+    
+	<string name="ui_sync_button_label_idle">開始提交</string>
+	<string name="ui_sync_button_label_done">再次提交</string>
+	<string name="ui_sync_button_label_error">重新提交</string>
+	<string name="ui_sync_button_label_syncing">停止提交</string>
+	<string name="ui_sync_button_label_canceling">停止中\u2026</string>
+	
+	<string name="status_idle">空閒</string>
+		<string name="status_idle_details">最近一次提交於: <xliff:g id="last_backup_date">%1$s</xliff:g></string>
+		<string name="status_idle_details_never">尚未提交</string>
+	<string name="status_sync">提交中</string>
+		<string name="status_sync_details">已提交<xliff:g id="backed_up_items">%1$d</xliff:g>/<xliff:g id="total_items">%2$d</xliff:g>條短信\u2026</string>
+	<string name="status_login">提交中</string>
+		<string name="status_login_details">登錄中\u2026</string>
+	<string name="status_done">完成</string>
+		<string name="status_done_details_max_per_sync">達到每次備份 %1$d 條的最大限制數。要繼續，請重新啟動提交。</string>
+		<string name="status_done_details_noitems">沒有需要提交的短信.</string>
+		<plurals name="status_done_details">
+	        <item quantity="one">成功提交<xliff:g id="total_items">%1$d</xliff:g>條短信.請登錄Gmail將草稿郵件發給我們</item>
+	        <item quantity="other">成功提交<xliff:g id="total_items">%1$d</xliff:g>條短信.請登錄Gmail將草稿郵件發給我們</item>
+	    </plurals>
+	<string name="status_unknown_error">出錯</string>
+		<string name="status_unknown_error_details">提交出錯:\n<xliff:g id="error_description">%1$s</xliff:g></string>
+	<string name="status_auth_failure">登錄出錯</string>
+		<string name="status_auth_failure_details">請檢查Gmail帳戶的用戶名和密碼是否正確，並且在Gmail設置中開啟IMAP功能。</string>
+		<string name="status_network_error">網路出錯</string>
+	<string name="status_network_error_details">無法連接到網際網路，請檢查網路</string>
+	
+	<string name="status_lang_error">提交出錯</string>
+	<string name="status_lang_error_details">請把Gmail語言設置成英文，然後重新提交一次。 </string>
+	
+	<string name="status_calc">提交中</string>
+		<string name="status_calc_details">計算需提交的短信數\u2026</string>
+	<string name="status_canceled">取消</string>
+		<string name="status_canceled_details">成功提交%1$d/%2$d條短信.</string>
+	
+	<string name="ui_status_label">短信提交</string>
+	<string name="ui_settings_label">設置</string>
+	<string name="ui_settings_advanced_label">高級設置</string>
+	<string name="ui_settings_advanced_desc">設置高級選項.</string>
+	<string name="ui_settings_advanced_cat_label">SMS Collection <small>\u00bb 高級設置</small></string>
+	
+	<string name="ui_login_label">用戶名</string>
+	<string name="ui_login_desc">Gmail完整郵箱地址.</string>
+	<string name="ui_login_dialog_msg">警告: 修改用戶名將重置所有的設置和密碼.</string>
+	
+	<string name="ui_password_label">密碼</string>
+	<string name="ui_password_desc">Gmail帳戶密碼.</string>
+	<string name="ui_password_dialog_msg">密碼將保存在手機裡，只有在登錄Gmail時才使用</string>	
+	
+	<string name="ui_imap_folder_label">Gmail標籤</string>
+	<string name="ui_imap_folder_desc">用於存放提交短信的Gmail標籤.</string>
+	<string name="ui_imap_folder_label_dialog_msg">提交短信生成的郵件將存放在該Gmail標籤下.</string>
+		 
+	<string name="donation_address">sms.donation@gmail.com</string>
+	
+	<string name="ui_max_items_per_sync_label">一次提交的短信數目</string>
+	<string name="ui_max_items_per_sync_desc">一次最多提交的短信數目.</string>
+	
+	<string name="ui_mark_as_read_label">標記為已讀</string>
+	<string name="ui_mark_as_read_desc">是否將提交生成的郵件標記為已讀.</string>
+	<string name="ui_enable_auto_sync_label">自動提交</string>
+	<string name="ui_enable_auto_sync_desc">是否自動提交新的短信.</string>
+	
+	<string name="ui_dialog_missing_credentials_title">登錄信息</string>
+	<string name="ui_dialog_missing_credentials_msg">提交前需先設置登錄資訊.</string>
+	<string name="ui_dialog_sync_data_reset_title">重置提交資料</string>
+	<string name="ui_dialog_sync_data_reset_msg">提交資料已經重置。請重設密碼並且開始一次手動提交。你可以選擇提交或者跳過當前手機裡存儲的短息。</string>
+	<string name="ui_dialog_invalid_imap_folder_title">標籤名稱不合法</string>
+	<string name="ui_dialog_invalid_imap_folder_msg">標籤名只能為英文字母(A-Z, a-z).</string>
+	
+	<string name="ui_dialog_first_sync_title">首次提交</string>
+	<string name="ui_dialog_first_sync_msg">提交或者跳過當前手機裡存儲的短信?\n\n注意: 如果選擇提交，所有的發送短信都將一次提交到Gmail。\n 如果選擇跳過，當前手機裡的短信將標記為已提交，以後這些短信無法重新提交。</string>
+	
+	<string name="ui_dialog_need_first_manual_sync_title">首次提交</string>
+	<string name="ui_dialog_need_first_manual_sync_msg">首次提交必須手動完成。現在開始首次提交嗎？</string>
+	
+	<string name="ui_ok">確認</string> 
+	<!-- string name="ui_yes">Yes</string -->
+	<!-- string name="ui_no">No</string -->
+	
+	<string name="ui_sync">提交</string>
+	<string name="ui_skip">跳過</string>
+	
+	<string name="err_could_not_create_folder">不能創建標籤.</string>
+	<string name="err_first_sync_needs_skip_flag">內部出錯: 首次提交沒有指明是否跳過當前短信。</string>
+	<string name="err_sync_requires_login_info">沒有登錄資訊，提交無法進行.</string>
+	<string name="err_communication_error">通信出錯.</string>
+	
+	<string name="menu_info">關於</string>
+	<string name="menu_share">共用</string>
+	<string name="menu_market">更新</string>
+	
+	<string name="about_email_button">聯繫作者</string>
+	<string name="about_email_subject">%1$s %2$s</string>
+	<string name="about_email_content">Hi Tao Chen,\n</string>
+	<string name="about_email_uri">mailto:taochen.nus@gmail.com</string>
+	
+	<string name="ui_close">關閉</string>
+	
+	
+	<string name="share_subject">SMS Collection  for Android</string>
+	<string name="share_body">你可以把Android手機上的短信提交到Gmail!\n檢查短信提交程式，點擊手機上的連結:\n%1$s\或者訪問:\n%2$s</string>
+	
+<string name="ui_frequency_auto_submit_label">自動提交的頻率</string>
+	<string name="ui_frequency_auto_submit_desc">多長時間自動做一次短信提交</string>
+<string name="donation_body">用戶%1$s:\n\n您好,感謝您參與我們的HIT!\n\n我們將收集以下%2$d條短信用於研究。需要您將這份草稿郵件發給我們，這樣我們才能真正收集到這些短信。\n\n短信裡往往含有敏感性資料。為了保護用戶的隱私，我們已經對電話號碼、郵箱、數位等敏感性資料進行了匿名化處理。這些都是在您的手機端完成的，所以到目前為止您的短信並沒有提交到我們的伺服器上。如果您覺得仍有短信不適合提交，請刪除位於2條分隔符號（----------）之間的相應短信。為了方便資料的處理，請依然保留分隔符號。如果您現在覺得這些短信可以提交了，請把這封郵件發給我們。\n\n用於識別您短信提交的識別字是：%3$s。\n\n再一次提醒，當前我們並沒有收集到這%2$d條短信,所以請將這封草稿郵件發給我們，這將表示您同意我們收集您的短信用於研究。更多關於該專案的資訊，請去我們的主頁http://wing.comp.nus.edu.sg:8080/SMSCorpus.\n\n非常感謝您的支持！\n\nTao Chen and A/P Min-Yen Kan\nWeb IR / NLP Group (@ National University of Singapore)\n\n%2$d條短信如下:\n%4$s\n</string>
+
+	<string name="ui_dialog_invalid_username_title">無效的郵箱地址</string>
+	<string name="ui_dialog_invalid_username_msg">Gmail地址應該以@gmail.com結束</string>
+	
+	
+	<string name="_12h">12 小時</string>
+	<string name="_24h">24 小時</string>
+	<string name="_48h">48 小時</string>
+	<string name="unlimited">全部</string>
+	
+	<string name="url_info_link">http://wing.comp.nus.edu.sg:8080/SMSCorpus/appUserGuide_cn.jsp</string>
+</resources>
